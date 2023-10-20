@@ -23,6 +23,15 @@
     <desc>if true, NEMO output files rebuild is performed at the end of run</desc>
   </entry>
 
+  <entry id="NEMO_REBUILD_ROOT">
+    <type>char</type>
+    <valid_values></valid_values>
+    <default_value>$ENV{CIMEROOT}/../components/nemo/source/utils</default_value>
+    <group>run_dout</group>
+    <file>env_run.xml</file>
+    <desc>directory where the script to rebuild the NEMO multiple outputs is</desc>
+  </entry>
+
   <entry id="NEMO_TOP_MODULES">
     <type>char</type>
     <valid_values> ,age,cfc,c14</valid_values> 
